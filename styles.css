@@ -80,3 +80,18 @@ footer{padding-top:46px;padding-bottom:46px}
   .p2:after,.p4:after{font-size:82px}
 }
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* Production Draft 2 — hero collision fix */
+@media(min-width:901px){
+  .site-header{padding-left:7%;padding-right:5%}
+  .site-header nav{margin-left:0;gap:40px}
+  .hero-copy{padding:132px 0 55px 7%}
+  .hero h1{font-size:68px;line-height:.88;letter-spacing:-.035em;max-width:520px}
+  .hero-tagline{margin-top:18px}
+}
+@media(min-width:901px) and (max-width:1180px){
+  .site-header nav{gap:26px}
+  .site-header nav a{font-size:13px}
+  .hero-copy{padding-top:122px}
+  .hero h1{font-size:60px}
+}
