@@ -51,3 +51,32 @@ footer{padding-top:46px;padding-bottom:46px}
   .about-grid{gap:28px}
   .insights,.resume{padding-top:60px;padding-bottom:60px}
 }
+
+/* Production Draft 2 — QA fixes */
+.hero-copy{padding:150px 0 55px 7%}
+.hero-tagline{margin:16px 0 28px;font-size:13px;letter-spacing:1.6px;color:#d9e9f4}
+.hero h1{margin-bottom:0}
+.disciplines{margin-bottom:30px}
+.actions{gap:18px;align-items:center}
+.btn{transition:box-shadow .2s ease,transform .2s ease,border-color .2s ease}
+.btn:hover{box-shadow:0 0 18px rgba(255,255,255,.38);transform:translateY(-1px)}
+.btn.primary:hover{box-shadow:0 0 22px rgba(255,20,36,.55)}
+.project{box-shadow:0 0 20px rgba(7,156,255,.30),inset 0 0 26px rgba(7,156,255,.08)}
+.project:hover{box-shadow:0 0 30px rgba(7,156,255,.58),inset 0 0 32px rgba(7,156,255,.12)}
+.project:after{position:absolute;right:42px;top:48%;transform:translateY(-50%);font-size:78px;line-height:1;color:#079cff;opacity:.48;filter:drop-shadow(0 0 12px rgba(7,156,255,.55));z-index:-1}
+.p1:after{content:"🔒"}
+.p2:after{content:"◉";font-size:104px}
+.p3:after{content:"⚙"}
+.p4:after{content:"☁";font-size:108px}
+.project>div{position:relative;z-index:1}
+@media(max-width:900px){
+  .hero-copy{padding:40px 6% 50px}
+  .hero-tagline{margin:14px 0 24px}
+}
+@media(max-width:520px){
+  .hero-copy{padding:34px 6% 44px}
+  .actions{gap:12px}
+  .project:after{right:26px;font-size:64px}
+  .p2:after,.p4:after{font-size:82px}
+}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
