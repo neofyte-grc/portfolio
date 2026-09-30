@@ -104,3 +104,15 @@ footer{padding-top:46px;padding-bottom:46px}
 /* Final hero/about asset refinements */
 .hero-mantra{color:#fff}
 .about-photo{background-image:url('Assets/tommy-about-blue-2.jpg')}
+
+/* Hero framing — show more of the original portrait without altering the asset */
+.hero-photo{
+  background-image:url('Assets/tommy-hero-blue.jpg');
+  background-size:88% auto;
+  background-position:center 18%;
+  background-repeat:no-repeat;
+  background-color:#071b29;
+}
+@media(max-width:900px){
+  .hero-photo{background-size:90% auto;background-position:center 16%}
+}
