@@ -95,3 +95,8 @@ footer{padding-top:46px;padding-bottom:46px}
   .hero-copy{padding-top:122px}
   .hero h1{font-size:60px}
 }
+
+/* Insights — published article treatment */
+.insight-featured{border-color:rgba(7,156,255,.62);box-shadow:0 0 18px rgba(7,156,255,.18)}
+.insight-link{display:inline-block;margin-top:20px;padding-bottom:5px;border-bottom:1px solid var(--blue);font-size:12px;font-weight:700;letter-spacing:.5px;transition:color .2s ease,text-shadow .2s ease,border-color .2s ease}
+.insight-link:hover{color:#8fd3ff;border-color:#8fd3ff;text-shadow:0 0 12px rgba(7,156,255,.85)}
