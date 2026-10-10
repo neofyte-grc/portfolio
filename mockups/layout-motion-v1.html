@@ -111,6 +111,8 @@ footer{padding:46px clamp(24px,5vw,96px)}
  .preview-banner{font-size:11px}
 }
 @media(max-width:900px){.site-header{height:65px;position:relative}.site-header nav{top:65px}}
+/* Preview: visually remove dark logo image backing without modifying the source logo */
+.neofyte-logo{mix-blend-mode:screen;background:transparent}
 /* Reveal only when JS confirms it can observe; no-JS content remains visible */
 @media(prefers-reduced-motion:no-preference){
  .motion-ready .reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.75,.2,1)}
