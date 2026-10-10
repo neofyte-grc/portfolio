@@ -112,7 +112,7 @@ footer{padding:46px clamp(24px,5vw,96px)}
 }
 @media(max-width:900px){.site-header{height:65px;position:relative}.site-header nav{top:65px}}
 /* Preview: visually remove dark logo image backing without modifying the source logo */
-.neofyte-logo{mix-blend-mode:screen;background:transparent}
+.footer-logo-lockup{position:relative;display:inline-block;flex:0 0 auto;line-height:0}.footer-logo-lockup .neofyte-logo{display:block;mix-blend-mode:screen;filter:brightness(.86) contrast(1.7);background:transparent}.footer-logo-lockup .grc-suffix{position:absolute;right:2%;bottom:4%;font-family:Arial,Helvetica,sans-serif;font-size:clamp(10px,1.1vw,16px);font-weight:800;letter-spacing:.14em;line-height:1;color:#fff;text-shadow:0 1px 3px #000}.footer-logo-lockup{isolation:auto}@media(max-width:700px){.footer-logo-lockup .grc-suffix{font-size:12px}}
 /* Reveal only when JS confirms it can observe; no-JS content remains visible */
 @media(prefers-reduced-motion:no-preference){
  .motion-ready .reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.75,.2,1)}
@@ -194,7 +194,7 @@ footer{padding:46px clamp(24px,5vw,96px)}
 <section id="resume" class="section resume"><p class="kicker">RESUME</p><h2>GRC Analyst | Security Risk, Compliance & IAM Governance</h2><p>Explore the experience, measurable results, and applied GRC work behind the portfolio.</p><div class="resume-tags"><span>NIST RMF</span><span>NIST SP 800-53</span><span>NIST AI RMF</span><span>IAM</span><span>Cloud GRC</span></div><a class="btn primary" href="../Assets/Tommy-Marshall-GRC-Resume.pdf" target="_blank" rel="noopener">View Résumé →</a></section>
 </main>
 <footer>
-  <div class="footer-brand"><img class="neofyte-logo" src="../Assets/neofyte-logo.jpg.jpeg" alt="Neofyte"><p>Security at the intersection<br>of people, processes, and technology.</p></div>
+  <div class="footer-brand"><span class="footer-logo-lockup"><img class="neofyte-logo" src="../Assets/neofyte-logo.jpg.jpeg" alt="Neofyte"><span class="grc-suffix" aria-label="GRC">GRC</span></span><p>Security at the intersection<br>of people, processes, and technology.</p></div>
   <div class="footer-links"><a href="https://www.linkedin.com/in/tommy-marshall-grc/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/neofyte-grc" target="_blank" rel="noopener">GitHub</a><a href="mailto:neofytegrc@gmail.com">Contact</a></div>
   <small>© <span id="year"></span> Neofyte. All rights reserved.</small>
 </footer>
