@@ -319,3 +319,33 @@ footer{padding:46px clamp(24px,5vw,96px)}
  .hero-impact::after{animation:none!important}
  .hero-impact span{animation:none!important;opacity:1!important;filter:none!important;transform:none!important}
 }
+
+/* iOS Safari mobile hero underline: animate transform instead of width.
+   A fixed width ensures the accent remains visible after animation. */
+@media (max-width:1099px){
+ .hero-copy .hero-impact::after{
+  content:"";
+  display:block;
+  position:relative;
+  width:clamp(110px,32vw,175px);
+  height:5px;
+  margin-top:20px;
+  background:#ff1424;
+  border-radius:1px;
+  transform:scaleX(1);
+  transform-origin:left center;
+  animation:none;
+ }
+}
+@media (max-width:1099px) and (prefers-reduced-motion:no-preference){
+ .hero-copy .hero-impact::after{
+  animation:mobile-underline-reveal .75s .65s cubic-bezier(.2,.8,.2,1) both;
+ }
+}
+@keyframes mobile-underline-reveal{
+ from{transform:scaleX(0);opacity:1}
+ to{transform:scaleX(1);opacity:1}
+}
+@media (max-width:1099px) and (prefers-reduced-motion:reduce){
+ .hero-copy .hero-impact::after{animation:none!important;transform:scaleX(1)!important;opacity:1!important}
+}
