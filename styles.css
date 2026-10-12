@@ -296,3 +296,26 @@ footer{padding:46px clamp(24px,5vw,96px)}
 .artifact-links a:hover,.artifact-links a:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:4px}
 .deliverable-more{font-size:clamp(15px,1vw,18px);color:#45b9ff;font-weight:750;margin-top:auto;padding-top:12px}
 
+
+/* Approved mobile motion: desktop-inspired entrance, reduced-motion safe */
+@media (max-width:1099px) and (prefers-reduced-motion:no-preference){
+ .hero-impact span{opacity:0;transform:translate3d(0,22px,0);filter:blur(3px);animation:mobile-impact-in .72s cubic-bezier(.2,.8,.2,1) forwards}
+ .hero-impact span:nth-child(2){animation-delay:.14s}
+ .hero-impact span:nth-child(3){animation-delay:.28s}
+ .hero-impact::after{content:"";display:block;width:0;height:4px;background:var(--red);margin-top:15px;animation:mobile-impact-line .7s .65s cubic-bezier(.2,.8,.2,1) forwards}
+ .site-header nav{transition:opacity .24s ease,transform .24s ease;transform-origin:top center}
+ .site-header nav.open{animation:mobile-menu-in .26s ease both}
+ .btn:active,.project:active{transform:scale(.985)}
+ .motion-ready .reveal{transform:translate3d(0,18px,0);transition-duration:.65s}
+ .motion-ready .reveal.is-visible{transform:none}
+ .motion-ready .project.reveal{transition-delay:0ms}
+ .motion-ready .hero-profile.reveal{transform:translate3d(0,12px,0) scale(.99)}
+ .motion-ready .hero-profile.reveal.is-visible{transform:none}
+}
+@keyframes mobile-impact-in{to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes mobile-impact-line{to{width:min(45vw,175px)}}
+@keyframes mobile-menu-in{from{opacity:0;transform:translateY(-9px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+ .hero-impact::after{animation:none!important}
+ .hero-impact span{animation:none!important;opacity:1!important;filter:none!important;transform:none!important}
+}
