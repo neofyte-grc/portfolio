@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<base href="../"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="A field note on informed access reviews, exception ownership, remediation, and practical IAM governance.">
+<title>Field Note 04 Preview | Access Reviews Are Decisions, Not Checkboxes</title>
+<meta name="theme-color" content="#03090a"><link rel="stylesheet" href="styles.css?v=20261001-prod1">
+<style>.fn-preview-banner{position:sticky;top:0;z-index:1000;background:#13364a;color:#f3fbff;text-align:center;padding:12px 18px;font:700 12px/1.5 system-ui,sans-serif;letter-spacing:.11em;border-bottom:1px solid #45b9ff}.fn-final-takeaway{margin:36px 0;padding:25px 28px;border-left:4px solid #45b9ff;background:linear-gradient(110deg,rgba(69,185,255,.14),rgba(69,185,255,.035));border-radius:0 12px 12px 0;font-weight:750;font-size:clamp(1.16rem,2.1vw,1.48rem);line-height:1.55;color:#eaf7ff}.fn-preview-banner small{display:block;font-size:10px;font-weight:500;letter-spacing:.06em;opacity:.85}@media(max-width:600px){.fn-final-takeaway{padding:20px 18px}}</style></head>
+<body><div class="fn-preview-banner">FIELD NOTE 04 · EDITORIAL PREVIEW ONLY<small>Not yet published to the live portfolio</small></div>
+<main class="article-shell"><a class="article-back" href="index.html#insights">← BACK TO INSIGHTS</a>
+<p class="article-kicker">FIELD NOTE 04 / IAM GOVERNANCE + OPERATIONS</p>
+<h1>Access Reviews Are Decisions, Not Checkboxes</h1>
+<p class="article-deck">An access review is only as effective as the decisions it produces.</p>
+<div class="article-body">
+<h2>A Review Is More Than a Completed Task</h2>
+<p>While developing IAM workflows for my self-directed GRC projects, I kept returning to a question that nearly a decade in operations taught me to ask: <strong>What does completion actually mean?</strong></p>
+<p>In operations, checking a box doesn't necessarily mean a problem has been resolved. A task might be marked complete while an exception remains open, a handoff goes unverified, or the underlying issue continues.</p>
+<p>Access reviews present a similar challenge.</p>
+<p>A manager can review a list of permissions, approve the entries, and submit the review on time. But did they understand what those permissions allowed? Did they recognize access that was no longer necessary? If changes were requested, was anyone responsible for verifying that they happened?</p>
+<p>Those questions separate administrative completion from meaningful security governance.</p>
+<p><strong>A completed review tells us the process occurred. An informed decision, followed by verified action, tells us whether the control achieved its purpose.</strong></p>
+
+<h2>Give the Reviewer Enough Context</h2>
+<p>One thing I've learned from operations is that people make better decisions when they understand what they're being asked to approve.</p>
+<p>That principle applies directly to access reviews.</p>
+<p>A manager might understand an employee's responsibilities but not recognize the technical permissions assigned to their account. A system owner might understand an application's access roles but have limited visibility into whether someone's responsibilities have changed.</p>
+<p>Neither perspective tells the whole story.</p>
+<p>While developing periodic access review workflows for my self-directed GRC projects, I focused on a simple question: <strong>What information would someone need to make a confident access decision?</strong></p>
+<p>At a minimum, that means understanding who has access, what permissions they hold, why those permissions were granted, and whether they remain appropriate for the person's current responsibilities.</p>
+<p>It also means making exceptions visible. Privileged access, outdated permissions, and unusual role assignments shouldn't disappear into a long spreadsheet of approvals.</p>
+<p>The objective isn't to overwhelm reviewers with more information. It's to give them the right information at the right moment.</p>
+<p><strong>An access review shouldn't ask someone to approve what they can't reasonably evaluate.</strong></p>
+
+<h2>Treat Exceptions as Decisions That Require Ownership</h2>
+<p>If there's one thing operations taught me, it's that identifying a problem and resolving it are two very different things.</p>
+<p>An exception can be documented, discussed, and assigned a priority. But until someone takes responsibility for the next step, the underlying issue remains.</p>
+<p>Access governance works the same way.</p>
+<p>Imagine a manager reviewing an employee's permissions and discovering that the employee still has access from a previous role.</p>
+<p>The reviewer correctly identifies the issue. The review itself is completed. But what happens next?</p>
+<p>Who is responsible for removing the unnecessary access? How quickly should that happen? And who confirms that the change was actually made?</p>
+<p>Those details determine whether the review produces a meaningful security outcome.</p>
+<p>While building IAM procedures and access review workflows for my self-directed GRC projects, I focused on making those handoffs explicit. An exception should have a documented reason, a responsible owner, an expected resolution date, and a way to verify the outcome.</p>
+<p>Not every exception can be resolved immediately. Sometimes access must be retained temporarily for a legitimate business reason.</p>
+<p>When that happens, the decision should be documented, appropriately approved, and revisited within a defined timeframe. Any remaining risk should be understood rather than quietly accepted by default.</p>
+<p>This is where I see a strong connection between operations and security governance.</p>
+<p>In both environments, processes become unreliable when responsibilities are unclear, follow-up is inconsistent, or unresolved issues disappear into the background.</p>
+<p><strong>Finding an exception is important. Giving it an owner, a resolution path, and a verified outcome is what turns that finding into effective governance.</strong></p>
+
+<h2>Connect Review Evidence to Actual Outcomes</h2>
+<p>One lesson I've carried from operations into GRC is that documentation should tell us more than whether a task was completed. It should help us understand what happened, why it happened, and whether the intended result was achieved.</p>
+<p>That becomes especially important when evaluating access reviews.</p>
+<p>A completed review record might show that a manager approved a set of permissions on a particular date. That's useful evidence, but it doesn't necessarily tell the whole story.</p>
+<p>What if the manager identified access that needed to be removed? What if an exception required additional approval? What if the review was completed, but the requested change never reached the system administrator?</p>
+<p>Without a connection between the review decision and the resulting action, it's difficult to determine whether the process accomplished what it was designed to do.</p>
+<p>While developing control documentation and sample evidence workflows for my self-directed GRC projects, I thought about what an auditor—or even the next person responsible for the process—would need to understand.</p>
+<p>The evidence should establish a clear path from the access being reviewed to the decision made, any follow-up required, and the final outcome.</p>
+<p>For example, if a reviewer determines that an employee no longer needs privileged access, the supporting record should make it possible to trace that decision through the removal request and confirmation that the permission was revoked.</p>
+<p>That doesn't mean collecting screenshots and spreadsheets simply to build a larger evidence folder.</p>
+<p>More documentation isn't automatically better documentation.</p>
+<p>The goal is to retain evidence that is relevant, reliable, and sufficient to demonstrate how the control operated.</p>
+<p>This is another place where operational discipline and security governance overlap. A well-designed process makes it easier to follow the work from beginning to end, identify where something stalled, and establish accountability without relying on someone's memory.</p>
+<p><strong>Good evidence doesn't just prove that a review took place. It helps demonstrate that the decisions made during that review were carried through to their intended outcomes.</strong></p>
+
+<h2>Build a Process People Can Actually Follow</h2>
+<p>One thing nearly a decade in operations taught me is that a process can look excellent on paper and still struggle in practice.</p>
+<p>Sometimes the instructions are unclear. Sometimes the right people aren't involved. Sometimes the process depends on someone remembering a step that was never formally assigned.</p>
+<p>And sometimes, people are doing their best with a workflow that simply wasn't designed around how the work actually happens.</p>
+<p>That's why I believe effective security governance has to consider more than the control requirement itself.</p>
+<p>It has to consider the people responsible for carrying it out.</p>
+<p>An access review process should make it easy to understand what needs to be reviewed, what information supports the decision, and what happens when something doesn't look right.</p>
+<p>Reviewers should know when to approve access, when to question it, and when to escalate a concern. System owners should understand their responsibilities when changes are requested. And the people overseeing the process should be able to identify outstanding actions without having to reconstruct the entire review from emails and spreadsheets.</p>
+<p>None of that happens automatically.</p>
+<p>It takes clear procedures, defined ownership, reasonable timelines, and a willingness to improve the workflow when something isn't working.</p>
+<p>While building my self-directed GRC projects, I kept coming back to that balance between control design and practical execution.</p>
+<p>A technically sound process matters. But if the people responsible for following it don't understand what they're being asked to do, the control becomes harder to execute consistently and harder to evaluate.</p>
+<p>The goal isn't to eliminate every manual step or make every decision automatic.</p>
+<p>It's to create a process where the right people have the right information, understand their responsibilities, and can demonstrate what happened.</p>
+<p><strong>A control becomes more reliable when the process supporting it is clear enough to follow, practical enough to sustain, and accountable enough to verify.</strong></p>
+
+<h2>The Lesson I'm Taking Forward</h2>
+<p>Building these IAM workflows changed how I think about access reviews.</p>
+<p>I started by looking at the mechanics: who reviews access, how often reviews happen, and what documentation should be retained.</p>
+<p>But the deeper lesson was about accountability.</p>
+<p>An access review isn't effective simply because someone completed it on schedule. Its value comes from the decisions people make, the actions that follow, and the evidence connecting those actions to the intended security outcome.</p>
+<p>That's a lesson I recognize from operations, even though the context is different.</p>
+<p>Processes work best when expectations are clear, responsibilities are understood, and follow-through is part of the design rather than an afterthought.</p>
+<p>As I continue developing my GRC skills, that's the perspective I want to bring to security governance: not just asking whether a control exists, but whether people can execute it consistently—and whether the organization can demonstrate that it works.</p>
+<div class="fn-final-takeaway">Because the goal isn't to finish the access review. The goal is to make sure the right people have the right access, for the right reasons—and that someone takes action when they don't.</div>
+<div class="article-rule"></div><p class="article-footer">This field note is part of an ongoing series documenting what I am learning while translating operations experience into practical governance, risk, compliance, cloud security, and AI governance work.</p>
+</div></main></body></html>
