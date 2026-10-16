@@ -86,6 +86,91 @@
 #about .about-bridge .bridge-item strong{font-size:18px}
 #work .project-artifacts .artifact-links a{font-size:17px}
 }
+</style><style id="approved-v7-hero-project-cards">
+@media(min-width:1100px){
+#home .hero-copy{justify-content:center;gap:clamp(22px,2vw,34px)}
+#home .hero-copy .hero-impact{font-size:clamp(76px,6.25vw,110px)!important;line-height:1.02;letter-spacing:-.055em;text-align:left!important;overflow-wrap:normal}
+#home .hero-copy .hero-impact span{display:block;text-align:left!important;text-align-last:auto!important;white-space:normal!important}
+#home .hero-copy .hero-delivery{font-size:clamp(29px,2.35vw,39px)!important;line-height:1.5;text-align:left!important;text-align-last:auto!important}
+#home .hero-copy .disciplines{gap:14px}
+#home .hero-copy .disciplines span{font-size:clamp(21px,1.65vw,28px)!important;padding:15px 25px!important;letter-spacing:.06em}
+#home .hero-copy .actions{gap:15px;flex-wrap:wrap}
+#home .hero-copy .actions .btn{font-size:clamp(22px,1.6vw,28px)!important;padding:22px 30px!important;line-height:1.25}
+}
+#home .hero-copy .disciplines span{background:linear-gradient(160deg,#1c3846 0%,#0c1d27 48%,#061117 100%);border:1px solid #5aa5c8;box-shadow:inset 0 2px 1px rgba(190,236,255,.27),inset 0 -4px 8px rgba(0,0,0,.55),0 5px 0 #030b10,0 10px 17px rgba(0,0,0,.55),0 0 13px rgba(69,185,255,.18);color:#f1fbff;text-shadow:0 1px 2px #000;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease}
+#home .hero-copy .disciplines span:hover{transform:translateY(-2px);box-shadow:inset 0 2px 1px rgba(190,236,255,.35),inset 0 -4px 8px rgba(0,0,0,.55),0 7px 0 #030b10,0 14px 22px rgba(0,0,0,.6),0 0 20px rgba(69,185,255,.32)}
+@media(max-width:1099px){#home .hero-copy .disciplines span{box-shadow:inset 0 1px 1px rgba(190,236,255,.2),inset 0 -3px 6px rgba(0,0,0,.5),0 3px 0 #030b10,0 6px 10px rgba(0,0,0,.4)}}
+
+/* V7 desktop-only hero spacing: preserve V6 typography exactly */
+@media(min-width:1100px){
+#home.hero{column-gap:12px!important}
+#home .hero-copy{transform:translateX(-18px);width:calc(100% + 18px)}
+}
+/* Make project titles primary, badges legible and on the right */
+#work .project{position:relative;padding-top:80px!important}
+#work .project>b{position:absolute!important;top:22px!important;right:90px!important;left:auto!important;display:block!important;font-size:clamp(23px,1.8vw,30px)!important;line-height:1.15!important;font-weight:850!important;color:#eaf7ff!important;z-index:3!important}
+#work .project .project-icon{position:absolute!important;top:13px!important;right:24px!important;left:auto!important;font-size:clamp(47px,3.3vw,59px)!important;line-height:1!important;opacity:1!important;color:#45b9ff!important;z-index:2!important;filter:drop-shadow(0 0 8px rgba(69,185,255,.65))!important}
+#work .project h3{font-size:clamp(31px,2.65vw,42px)!important;line-height:1.18!important;letter-spacing:-.02em!important;padding-right:0!important;margin:0 0 17px!important;max-width:none!important}
+#work .project>div:last-child{width:100%}
+@media(max-width:767px){
+#work .project{padding-top:68px!important}
+#work .project>b{top:18px!important;right:70px!important;font-size:22px!important}
+#work .project .project-icon{top:13px!important;right:18px!important;font-size:42px!important}
+#work .project h3{font-size:clamp(27px,6vw,33px)!important}
+}
+</style><style id="field-note-card-scale-preview">
+/* Preview only: improved hierarchy and consistent legibility across four field-note cards */
+#insights .insight-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2vw,30px)}
+#insights .insight-grid article{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:clamp(30px,2.6vw,46px);border-radius:10px}
+#insights .insight-grid article>span{font-size:clamp(17px,1.22vw,22px);line-height:1.35;letter-spacing:.12em;font-weight:850;color:#ff5261}
+#insights .insight-grid article>h3{font-size:clamp(30px,2.65vw,44px);line-height:1.19;letter-spacing:-.025em;margin:19px 0 18px;overflow-wrap:break-word}
+#insights .insight-grid article>p{font-size:clamp(21px,1.55vw,27px);line-height:1.48;color:#d5e1e7;margin:0 0 25px}
+#insights .insight-grid article>.insight-link{font-size:clamp(19px,1.38vw,24px);line-height:1.4;font-weight:800;margin-top:auto;padding-top:8px;padding-bottom:7px}
+@media(max-width:850px){#insights .insight-grid{grid-template-columns:1fr}#insights .insight-grid article{padding:clamp(25px,5vw,34px)}#insights .insight-grid article>span{font-size:17px}#insights .insight-grid article>h3{font-size:clamp(29px,6.5vw,37px)}#insights .insight-grid article>p{font-size:clamp(20px,4.5vw,24px)}#insights .insight-grid article>.insight-link{font-size:20px}}
+</style><style id="final-alignment-and-red-buttons">
+/* Nudge portrait right, closer to the hero copy, without altering approved headline scale. */
+@media(min-width:1100px){#home .hero-profile{transform:translateX(24px);position:relative;z-index:1}}
+/* Project case-study CTAs use the same red visual language as the primary hero CTA. */
+#work .project .project-case-button{background:#e11224!important;border-color:#ff4050!important;color:#fff!important;box-shadow:0 4px 16px rgba(225,18,36,.23)!important}
+#work .project .project-case-button:hover,#work .project .project-case-button:focus-visible{background:#ff2538!important;border-color:#ff7581!important;box-shadow:0 0 20px rgba(255,20,36,.6),0 0 34px rgba(255,20,36,.25)!important}
+#work .project .project-case-button:focus-visible{outline:2px solid #fff;outline-offset:3px}
+</style><style id="about-readable-scale-v9">
+/* About: bring body, skills bridge, and CTA into the approved site-wide reading scale. */
+#about .about-v2-copy>.kicker{font-size:clamp(17px,1.25vw,21px)!important;letter-spacing:.12em}
+#about .about-v2-copy h2{font-size:clamp(43px,4.15vw,66px)!important;line-height:1.1!important}
+#about .about-v2-copy .about-slogan{font-size:clamp(20px,1.55vw,27px)!important;line-height:1.4!important;letter-spacing:.065em}
+#about .about-v2-copy .about-v3-lead{font-size:clamp(24px,1.85vw,31px)!important;line-height:1.5!important}
+#about .about-v2-copy .about-transition{font-size:clamp(23px,1.7vw,29px)!important;line-height:1.55!important}
+#about .about-v2-copy .about-bridge h3{font-size:clamp(30px,2.5vw,42px)!important;line-height:1.2!important}
+#about .about-v2-copy .bridge-grid{gap:15px}
+#about .about-v2-copy .bridge-item{padding:clamp(20px,1.7vw,28px)!important}
+#about .about-v2-copy .bridge-item small{font-size:clamp(19px,1.35vw,24px)!important;line-height:1.45!important}
+#about .about-v2-copy .bridge-item strong{font-size:clamp(22px,1.6vw,28px)!important;line-height:1.35!important;margin-top:7px}
+#about .about-v2-copy .about-target{padding:clamp(23px,2vw,34px)!important}
+#about .about-v2-copy .about-target>strong{font-size:clamp(23px,1.75vw,30px)!important;line-height:1.3!important}
+#about .about-v2-copy .about-target p{font-size:clamp(21px,1.55vw,27px)!important;line-height:1.55!important}
+#about .about-v2-copy>a.btn{font-size:clamp(20px,1.5vw,26px)!important;padding:19px 28px!important;line-height:1.35}
+@media(max-width:767px){
+#about .about-v2-copy>.kicker{font-size:16px!important}
+#about .about-v2-copy h2{font-size:clamp(38px,8vw,48px)!important}
+#about .about-v2-copy .about-slogan{font-size:19px!important}
+#about .about-v2-copy .about-v3-lead{font-size:clamp(21px,4.8vw,25px)!important}
+#about .about-v2-copy .about-transition{font-size:clamp(20px,4.5vw,24px)!important}
+#about .about-v2-copy .about-bridge h3{font-size:clamp(28px,6vw,34px)!important}
+#about .about-v2-copy .bridge-item small{font-size:18px!important}
+#about .about-v2-copy .bridge-item strong{font-size:21px!important}
+#about .about-v2-copy .about-target>strong{font-size:23px!important}
+#about .about-v2-copy .about-target p{font-size:20px!important}
+#about .about-v2-copy>a.btn{font-size:20px!important}
+}
+</style><style id="about-portrait-height-v10">
+/* Stretch the existing portrait frame to the height of the About copy on desktop.
+   Object-fit cover fills the column without distorting the image. */
+@media(min-width:851px){
+#about .about-v2-grid{align-items:stretch!important}
+#about .about-v2-photo{height:100%!important;min-height:100%!important;max-height:none!important;object-fit:cover!important;object-position:center top!important;position:static!important;align-self:stretch!important}
+}
+@media(max-width:850px){#about .about-v2-photo{height:auto!important;max-height:none!important;object-fit:contain!important;position:static!important}}
 </style></head>
 <body>
 <header class="site-header">
@@ -114,10 +199,10 @@
 <section id="work" class="section work">
   <div class="section-heading"><div><h2>FEATURED WORK</h2><p>Four self-directed GRC case studies demonstrating practical risk registers, control matrices, IAM workflows, and reviewable evidence.</p></div><a href="https://github.com/neofyte-grc" target="_blank" rel="noopener">View All Projects →</a></div>
   <div class="project-grid">
-    <article class="project p1"><b>01</b><div class="project-icon" aria-hidden="true">◇</div><div><h3>The Human Side<br>of Security</h3><p><strong>Problem:</strong> Inconsistent access ownership and review in a fictional logistics environment.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected human-centered-security-program project artifacts"><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/06-risk-register.md" target="_blank" rel="noopener noreferrer">Risk register ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/07-security-control-matrix.md" target="_blank" rel="noopener noreferrer">Security control matrix ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/09-iam-and-security-procedures.md" target="_blank" rel="noopener noreferrer">IAM & security procedures ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/12-evidence-and-control-testing-plan.md" target="_blank" rel="noopener noreferrer">Control testing plan ↗</a></div></div><div class="project-meta"><span>NIST CSF 2.0</span><span>IAM</span><span>Risk</span></div><a class="project-detail btn project-case-button" href="projects/human-side-of-security.html">View Case Study →</a></div></article>
-    <article class="project p2"><b>02</b><div class="project-icon" aria-hidden="true">◎</div><div><h3>AI Governance<br>in the Real World</h3><p><strong>Problem:</strong> Unclear oversight and escalation for AI-assisted decisions.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected ai-governance-and-risk-program project artifacts"><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/06-ai-risk-register.md" target="_blank" rel="noopener noreferrer">AI risk register ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/09-ai-control-matrix.md" target="_blank" rel="noopener noreferrer">AI control matrix ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/10-human-oversight-and-escalation-plan.md" target="_blank" rel="noopener noreferrer">Human oversight plan ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/evidence/02-sample-human-review-decision-record.md" target="_blank" rel="noopener noreferrer">Sample review decision ↗</a></div></div><div class="project-meta"><span>NIST AI RMF</span><span>Oversight</span><span>Risk</span></div><a class="project-detail btn project-case-button" href="projects/ai-governance.html">View Case Study →</a></div></article>
-    <article class="project p3"><b>03</b><div class="project-icon" aria-hidden="true">⚙</div><div><h3>From Framework<br>to Workflow</h3><p><strong>Problem:</strong> Framework requirements that lack executable ownership.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected from-framework-to-workflow project artifacts"><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/21-control-assessment-and-traceability-report.md" target="_blank" rel="noopener noreferrer">Control traceability report ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/08-joiner-mover-leaver-workflow.md" target="_blank" rel="noopener noreferrer">Joiner–mover–leaver workflow ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/11-periodic-access-review-workflow.md" target="_blank" rel="noopener noreferrer">Access review workflow ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/evidence/sample-control-test-workpaper.md" target="_blank" rel="noopener noreferrer">Sample control test ↗</a></div></div><div class="project-meta"><span>NIST 800-53</span><span>IAM</span><span>GRC</span></div><a class="project-detail btn project-case-button" href="projects/framework-to-workflow.html">View Case Study →</a></div></article>
-    <article class="project p4"><b>04</b><div class="project-icon" aria-hidden="true">☁</div><div><h3>Cloud Security<br>Operations Blueprint</h3><p><strong>Problem:</strong> Cloud control assurance for a time-sensitive dispatch workload.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected cloud-security-operations-blueprint project artifacts"><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/controls/cloud-control-matrix.md" target="_blank" rel="noopener noreferrer">Cloud control matrix ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/docs/05-cloud-risk-assessment.md" target="_blank" rel="noopener noreferrer">Cloud risk assessment ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/docs/15-control-testing-and-evidence-plan.md" target="_blank" rel="noopener noreferrer">Control testing & evidence plan ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/evidence/sample-control-evidence-index.md" target="_blank" rel="noopener noreferrer">Sample evidence index ↗</a></div></div><div class="project-meta"><span>AWS</span><span>Cloud</span><span>GRC</span></div><a class="project-detail btn project-case-button" href="projects/cloud-security-blueprint.html">View Case Study →</a></div></article>
+    <article class="project p1"><b>01</b><div class="project-icon" aria-hidden="true">◇</div><div><h3>The Human Side of Security</h3><p><strong>Problem:</strong> Inconsistent access ownership and review in a fictional logistics environment.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected human-centered-security-program project artifacts"><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/06-risk-register.md" target="_blank" rel="noopener noreferrer">Risk register ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/07-security-control-matrix.md" target="_blank" rel="noopener noreferrer">Security control matrix ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/09-iam-and-security-procedures.md" target="_blank" rel="noopener noreferrer">IAM & security procedures ↗</a><a href="https://github.com/neofyte-grc/human-centered-security-program/blob/main/docs/12-evidence-and-control-testing-plan.md" target="_blank" rel="noopener noreferrer">Control testing plan ↗</a></div></div><div class="project-meta"><span>NIST CSF 2.0</span><span>IAM</span><span>Risk</span></div><a class="project-detail btn project-case-button" href="projects/human-side-of-security.html">View Case Study →</a></div></article>
+    <article class="project p2"><b>02</b><div class="project-icon" aria-hidden="true">◎</div><div><h3>AI Governance in the Real World</h3><p><strong>Problem:</strong> Unclear oversight and escalation for AI-assisted decisions.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected ai-governance-and-risk-program project artifacts"><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/06-ai-risk-register.md" target="_blank" rel="noopener noreferrer">AI risk register ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/09-ai-control-matrix.md" target="_blank" rel="noopener noreferrer">AI control matrix ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/docs/10-human-oversight-and-escalation-plan.md" target="_blank" rel="noopener noreferrer">Human oversight plan ↗</a><a href="https://github.com/neofyte-grc/ai-governance-and-risk-program/blob/main/evidence/02-sample-human-review-decision-record.md" target="_blank" rel="noopener noreferrer">Sample review decision ↗</a></div></div><div class="project-meta"><span>NIST AI RMF</span><span>Oversight</span><span>Risk</span></div><a class="project-detail btn project-case-button" href="projects/ai-governance.html">View Case Study →</a></div></article>
+    <article class="project p3"><b>03</b><div class="project-icon" aria-hidden="true">⚙</div><div><h3>From Framework to Workflow</h3><p><strong>Problem:</strong> Framework requirements that lack executable ownership.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected from-framework-to-workflow project artifacts"><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/21-control-assessment-and-traceability-report.md" target="_blank" rel="noopener noreferrer">Control traceability report ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/08-joiner-mover-leaver-workflow.md" target="_blank" rel="noopener noreferrer">Joiner–mover–leaver workflow ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/docs/11-periodic-access-review-workflow.md" target="_blank" rel="noopener noreferrer">Access review workflow ↗</a><a href="https://github.com/neofyte-grc/from-framework-to-workflow/blob/main/evidence/sample-control-test-workpaper.md" target="_blank" rel="noopener noreferrer">Sample control test ↗</a></div></div><div class="project-meta"><span>NIST 800-53</span><span>IAM</span><span>GRC</span></div><a class="project-detail btn project-case-button" href="projects/framework-to-workflow.html">View Case Study →</a></div></article>
+    <article class="project p4"><b>04</b><div class="project-icon" aria-hidden="true">☁</div><div><h3>Cloud Security Operations Blueprint</h3><p><strong>Problem:</strong> Cloud control assurance for a time-sensitive dispatch workload.</p><div class="project-artifacts"><h4 class="artifact-heading">DELIVERABLES BUILT</h4><div class="artifact-links" aria-label="Selected cloud-security-operations-blueprint project artifacts"><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/controls/cloud-control-matrix.md" target="_blank" rel="noopener noreferrer">Cloud control matrix ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/docs/05-cloud-risk-assessment.md" target="_blank" rel="noopener noreferrer">Cloud risk assessment ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/docs/15-control-testing-and-evidence-plan.md" target="_blank" rel="noopener noreferrer">Control testing & evidence plan ↗</a><a href="https://github.com/neofyte-grc/cloud-security-operations-blueprint/blob/main/evidence/sample-control-evidence-index.md" target="_blank" rel="noopener noreferrer">Sample evidence index ↗</a></div></div><div class="project-meta"><span>AWS</span><span>Cloud</span><span>GRC</span></div><a class="project-detail btn project-case-button" href="projects/cloud-security-blueprint.html">View Case Study →</a></div></article>
   </div>
 </section>
 
