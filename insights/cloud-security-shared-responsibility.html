@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Why cloud shared responsibility requires clear control ownership, security evidence, exceptions, and accountability."><title>Cloud Security Is a Shared Responsibility—But Accountability Still Needs an Owner | Tommy Marshall</title><meta name="theme-color" content="#03090a"><link rel="stylesheet" href="../styles.css?v=20261001-prod1"><style>.fn-final-takeaway{margin:36px 0;padding:25px 28px;border-left:4px solid #45b9ff;background:linear-gradient(110deg,rgba(69,185,255,.14),rgba(69,185,255,.035));border-radius:0 12px 12px 0;font-weight:750;font-size:clamp(1.16rem,2.1vw,1.48rem);line-height:1.55;color:#eaf7ff}@media(max-width:600px){.fn-final-takeaway{padding:20px 18px}}</style></head><body>
+<main class="article-shell"><a class="article-back" href="index.html">← BACK TO INSIGHTS</a><p class="article-kicker">FIELD NOTE 06 / CLOUD SECURITY + ACCOUNTABILITY</p><h1>Cloud Security Is a Shared Responsibility—But Accountability Still Needs an Owner</h1><p class="article-deck">Shared responsibility explains how security obligations are divided. Clear ownership determines whether the work gets done.</p><div class="article-body">
+<h2>Shared Doesn't Mean Someone Else Has It Covered</h2>
+<p>I've seen firsthand how quickly things can fall through the cracks when everyone assumes someone else is responsible for the next step.</p>
+<p>A responsibility can be mentioned in a meeting, documented in a procedure, or assigned to a team. But if nobody understands who is accountable for the outcome, important tasks can fall between handoffs.</p>
+<p>I've been thinking about that challenge while developing cloud security governance artifacts for my self-directed GRC projects.</p>
+<p>Cloud computing introduces a familiar concept in a different environment: shared responsibility.</p>
+<p>A cloud provider is responsible for certain parts of the environment, while the customer remains responsible for others. The precise division depends on the service model, the provider, and the services being used.</p>
+<p>That division matters. But understanding it is only the beginning.</p>
+<p>Within the customer organization, someone still needs to determine who manages identities, who approves configuration changes, who monitors security findings, and who verifies that corrective actions are completed.</p>
+<p>Without that internal clarity, shared responsibility can become a reason for assumptions rather than a framework for accountability.</p>
+<p><strong>A shared responsibility model explains where obligations sit. It doesn't automatically assign an owner to every decision or action.</strong></p>
+
+<h2>Translate the Model Into Actual Control Ownership</h2>
+<p>Cloud security discussions often begin with technical boundaries.</p>
+<p>Who secures the underlying infrastructure? Who configures the application? Who manages the data? Who controls access?</p>
+<p>Those questions are essential, but they don't always reveal how the work moves through an organization.</p>
+<p>Take identity and access management.</p>
+<p>A cloud provider may supply identity services, access controls, and logging capabilities. The customer still needs to configure and use those capabilities appropriately for its environment.</p>
+<p>Within the customer organization, responsibilities may be divided among security teams, cloud administrators, application owners, managers, and governance personnel.</p>
+<p>Who approves privileged access? Who implements the change? Who reviews existing permissions? Who investigates an exception? Who confirms that unnecessary access was removed?</p>
+<p>If those responsibilities aren't clearly assigned, having the right technology available doesn't guarantee that the control will operate effectively.</p>
+<p>While building a cloud control matrix and related governance workflows for my self-directed projects, I focused on translating broad responsibility statements into specific activities and accountable roles.</p>
+<p>That meant considering not only who performs a task, but who approves decisions, who needs to be consulted, and who verifies the result.</p>
+<p>The goal wasn't to make every person responsible for everything.</p>
+<p>It was to make the handoffs understandable.</p>
+<p><strong>Cloud control ownership becomes meaningful when each requirement can be connected to a responsible role, an expected action, and a way to verify the outcome.</strong></p>
+
+<h2>Configuration Is Only One Part of Assurance</h2>
+<p>Cloud environments provide many ways to configure security.</p>
+<p>Identity policies, network rules, encryption settings, logging, and monitoring capabilities all contribute to protecting systems and information.</p>
+<p>But enabling a feature and establishing an effective governance process are different things.</p>
+<p>A logging service might be configured correctly today. Someone still needs to determine which events matter, whether the logs are retained appropriately, who reviews alerts, and what happens when suspicious activity is identified.</p>
+<p>An encryption setting might meet an organization's technical standard. Someone still needs to understand how keys are managed, which data is covered, and whether the configuration remains appropriate as the environment changes.</p>
+<p>These examples point to an important distinction.</p>
+<p>Technical controls can enforce or support security requirements, but operational processes are often needed to sustain and demonstrate their effectiveness.</p>
+<p>In my cloud security operations blueprint project, I explored that relationship through control mappings, risk considerations, sample testing procedures, and evidence expectations.</p>
+<p>Because the project is self-directed, these artifacts represent proposed workflows and illustrative control evidence—not claims that I operated or validated controls in a production cloud environment.</p>
+<p>That distinction matters to me. Good governance should be precise about what has been designed, what has been tested, and what has actually been demonstrated.</p>
+<p><strong>A configured security feature is an important starting point. Assurance requires understanding how it is managed, monitored, and verified over time.</strong></p>
+
+<h2>Make Exceptions and Escalation Paths Visible</h2>
+<p>Even well-designed cloud processes encounter exceptions.</p>
+<p>A team may need temporary elevated access. A system might require a configuration that differs from an established baseline. A vulnerability may need additional time to remediate because of an operational dependency.</p>
+<p>The presence of an exception doesn't automatically mean governance has failed.</p>
+<p>The real question is how the organization evaluates and manages the situation.</p>
+<p>I've seen how exceptions become especially difficult when they're handled through informal conversations without clear decisions or follow-up.</p>
+<p>Cloud security faces the same challenge.</p>
+<p>A useful exception process should establish what requirement is being deviated from, why the deviation is necessary, what risk it introduces, who can approve it, and when it must be reconsidered.</p>
+<p>Where appropriate, compensating controls or interim safeguards should be documented.</p>
+<p>Escalation paths matter, too.</p>
+<p>If a security finding cannot be resolved by the person who discovers it, there should be a clear way to involve the right decision-maker. If the risk exceeds someone's authority, the process should identify where that decision belongs.</p>
+<p>While developing my sample cloud governance workflows, I tried to make those paths explicit rather than assume that someone would know what to do.</p>
+<p><strong>An exception shouldn't disappear into the flexibility of the cloud. It needs a documented decision, accountable ownership, and a defined path forward.</strong></p>
+
+<h2>Design for Change, Not Just the Initial Deployment</h2>
+<p>One of the defining characteristics of cloud environments is how quickly they can change.</p>
+<p>Resources can be created, modified, scaled, or removed through automated processes. Teams can deploy new services without the same physical infrastructure timelines that once shaped many technology projects.</p>
+<p>That flexibility is valuable.</p>
+<p>It also means a control that was appropriate during an initial review may not remain effective indefinitely.</p>
+<p>New identities may be introduced. Permissions may expand. Logging settings may change. Data may move into different services. A previously approved architecture may evolve.</p>
+<p>Cloud governance therefore needs mechanisms that account for change.</p>
+<p>Depending on the environment and risk, those mechanisms might include configuration baselines, automated policy checks, periodic access reviews, change monitoring, exception reporting, and recurring control testing.</p>
+<p>But the presence of monitoring tools doesn't eliminate the need for ownership.</p>
+<p>Someone must define the expected state, decide which deviations require attention, evaluate findings, and ensure that necessary corrections happen.</p>
+<p>A process that works only when someone remembers to check it isn't as dependable as one with defined triggers, responsibilities, and feedback.</p>
+<p>The objective is to create a control environment that can adapt without losing accountability.</p>
+<p><strong>Cloud governance has to be designed for the environment as it changes—not only for how it looked when the controls were first documented.</strong></p>
+
+<h2>The Lesson I'm Taking Forward</h2>
+<p>Working through cloud security governance has reinforced a lesson I first learned in operations: shared work still needs clear accountability.</p>
+<p>The shared responsibility model provides an essential starting point for understanding the relationship between a cloud provider and its customer.</p>
+<p>But within an organization, effective governance requires another level of detail.</p>
+<p>People need to know which controls they own, which decisions they can make, what evidence they must retain, and when an issue needs to be escalated.</p>
+<p>Technology can help enforce standards, detect changes, and provide visibility. It can't resolve every ambiguity about responsibility or business risk on its own.</p>
+<p>That's the perspective I'm bringing to cloud security governance: understanding the technical environment while paying equal attention to the people, processes, and decisions that make its controls sustainable.</p>
+<div class="fn-final-takeaway">Cloud security may be shared across providers, teams, and technologies. Accountability still has to be clear enough that someone knows what needs to happen—and follows through.</div><div class="article-rule"></div><p class="article-footer">Lessons From Building the Work — a series reflecting on self-directed GRC projects and practical operational experience.</p></div></main></body></html>
