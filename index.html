@@ -177,7 +177,48 @@
 #insights .insights-view-all a:hover,#insights .insights-view-all a:focus-visible{background:#ff2538;border-color:#ff7581;box-shadow:0 0 20px rgba(255,20,36,.6),0 0 34px rgba(255,20,36,.25);transform:translateY(-2px)}
 #insights .insights-view-all a:focus-visible{outline:2px solid #fff;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){#insights .insights-view-all a{transition:none}#insights .insights-view-all a:hover{transform:none}}
-</style></head>
+</style><style id="mobile-first-hero-preview-v1">
+/* Preview-only mobile/tablet hero. Desktop (1100px+) is intentionally unchanged. */
+.mobile-hero-eyebrow{display:none}
+@media(max-width:1099px){
+ #home.hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;min-height:0!important;padding:clamp(24px,4vw,42px) 6% 58px!important;overflow:visible!important}
+ #home .hero-copy{order:1!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;width:100%!important;max-width:760px!important;min-height:0!important;margin:0 auto!important;padding:0!important;gap:0!important;transform:none!important}
+ #home .hero-copy .mobile-hero-eyebrow{display:block!important;margin:0 0 15px!important;color:#ff5361!important;font-size:clamp(13px,2vw,16px)!important;font-weight:850!important;letter-spacing:.105em!important;line-height:1.5!important}
+ #home .hero-copy .hero-impact{font-size:clamp(35px,5.6vw,56px)!important;line-height:1.09!important;letter-spacing:-.038em!important;margin:0 0 17px!important;max-width:100%!important;text-wrap:pretty!important}
+ #home .hero-copy .hero-impact span{display:inline!important;white-space:normal!important}
+ #home .hero-copy .hero-impact span::after{content:" "}
+ #home .hero-copy .hero-impact::after{margin-top:15px!important;width:clamp(90px,25vw,130px)!important}
+ #home .hero-copy .hero-delivery{font-size:clamp(18px,2.45vw,23px)!important;line-height:1.46!important;margin:0 0 22px!important;max-width:680px!important}
+ #home .hero-copy .actions{order:3!important;display:flex!important;flex-wrap:wrap!important;flex-direction:row!important;align-items:stretch!important;gap:10px!important;margin:0!important}
+ #home .hero-copy .actions .btn{flex:1 1 170px!important;width:auto!important;min-width:0!important;font-size:clamp(16px,2.2vw,19px)!important;line-height:1.25!important;padding:15px 14px!important;margin:0!important}
+ #home .hero-copy .actions .btn:nth-child(2){order:-1!important;background:#e11224!important;border-color:#ff4050!important;color:#fff!important;font-weight:850!important;box-shadow:0 4px 18px rgba(225,18,36,.25)!important}
+ #home .hero-copy .actions .btn:nth-child(1),#home .hero-copy .actions .btn:nth-child(3){background:#0b2330!important;border-color:#45b9ff!important;color:#e7f7ff!important}
+ #home .hero-copy .disciplines{order:4!important;margin:18px 0 0!important;gap:8px!important}
+ #home .hero-copy .disciplines span{font-size:clamp(13px,1.8vw,16px)!important;padding:8px 13px!important}
+ #home .hero-profile{order:2!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-self:center!important;align-self:center!important;max-width:540px!important;width:100%!important;margin:26px auto 0!important;padding:0!important;transform:none!important}
+ #home .hero-photo{display:block!important;width:min(100%,400px)!important;height:auto!important;max-height:360px!important;aspect-ratio:1/1!important;object-fit:contain!important;object-position:center!important}
+ #home .hero-identity{width:100%!important;max-width:400px!important;padding:13px 12px 15px!important}
+ #home .hero-identity strong{font-size:clamp(21px,2.7vw,26px)!important}
+ #home .hero-identity span{font-size:clamp(14px,1.8vw,17px)!important;margin-top:6px!important}
+}
+@media(max-width:600px){
+ #home.hero{padding:20px 6% 45px!important}
+ #home .hero-copy .mobile-hero-eyebrow{font-size:12px!important;letter-spacing:.08em!important;margin-bottom:11px!important}
+ #home .hero-copy .hero-impact{font-size:clamp(32px,8.5vw,41px)!important;line-height:1.11!important;margin-bottom:15px!important}
+ #home .hero-copy .hero-delivery{font-size:17px!important;line-height:1.45!important;margin-bottom:17px!important}
+ #home .hero-copy .actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9px!important}
+ #home .hero-copy .actions .btn{font-size:15px!important;padding:13px 9px!important}
+ #home .hero-copy .actions .btn:nth-child(2){grid-column:1 / -1!important}
+ #home .hero-copy .disciplines{margin-top:15px!important}
+ #home .hero-copy .disciplines span{font-size:12px!important;padding:7px 11px!important}
+ #home .hero-profile{margin-top:23px!important}
+ #home .hero-photo{width:min(100%,340px)!important;max-height:310px!important}
+}
+@media(prefers-reduced-motion:reduce){#home .hero-copy .hero-impact span{animation:none!important;opacity:1!important;filter:none!important;transform:none!important}}
+</style><style id="mobile-hero-variant">@media(max-width:1099px){
+#home .hero-copy .disciplines{display:none!important}
+#home .hero-profile{margin-top:18px!important}
+}</style></head>
 <body>
 <header class="site-header">
   <a class="wordmark" href="#home" aria-label="Tommy Marshall home">TM</a>
@@ -194,6 +235,7 @@
     <div class="hero-identity"><strong>TOMMY MARSHALL</strong><span>GRC ANALYST</span></div>
   </div>
   <div class="hero-copy">
+    <p class="mobile-hero-eyebrow">GRC · SECURITY RISK · IAM GOVERNANCE</p>
     <h1 class="hero-impact"><span>I TURN SECURITY</span> <span>REQUIREMENTS INTO</span> <span>CONTROLS PEOPLE FOLLOW.</span></h1>
     
     <p class="hero-delivery">GRC Analyst candidate applying nearly a decade of operations leadership to security risk, IAM governance, and audit-ready controls.</p>
