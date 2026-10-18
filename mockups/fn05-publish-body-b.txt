@@ -1,2 +1,12 @@
 <h2>Make Remediation Part of the Process</h2>
 <p>Finding a control gap is an important outcome of testing. Leaving it unresolved is a different story.</p>
+<p>I've seen how easily unresolved issues can linger when nobody owns the follow-up. A similar risk exists in GRC.</p>
+<p>Suppose a sample review identifies access removals that occurred later than the organization's established timeframe.</p>
+<p>The finding should lead to more than a note that the control failed.</p>
+<p>Someone needs to determine why the delays occurred. Was the handoff unclear? Were requests submitted late? Was there insufficient visibility into outstanding work? Did the procedure create an unrealistic dependency?</p>
+<p>The answers help determine whether the response should involve a workflow change, clearer ownership, additional monitoring, or another corrective action.</p>
+<p>A useful remediation record should identify the issue, its risk or impact, the accountable owner, the corrective action, and the expected completion date.</p>
+<p>Just as importantly, closure should depend on evidence that the action was implemented and, where appropriate, that it addressed the underlying weakness.</p>
+<p>Not every finding can be resolved immediately. When remediation takes time, interim measures and risk acceptance decisions may also need to be documented and approved.</p>
+<p>Developing sample issue-tracking and control-testing artifacts helped me see remediation as part of the control lifecycle rather than a separate administrative exercise.</p>
+<p><strong>A finding becomes valuable when it leads to an owned action, a verified correction, and a more reliable process.</strong></p>
