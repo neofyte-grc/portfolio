@@ -1,0 +1,2 @@
+<h2>Make Remediation Part of the Process</h2>
+<p>Finding a control gap is an important outcome of testing. Leaving it unresolved is a different story.</p>
