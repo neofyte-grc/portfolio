@@ -1,0 +1,34 @@
+<h2>The Audit Shouldn't Be the Starting Point</h2>
+<p>One thing my operations experience has taught me is that preparation works best when it's built into the process—not something everyone scrambles to do before an inspection or review.</p>
+<p>When a process is running well, you can usually see it in the work itself. Responsibilities are clear. Records are maintained. Problems are escalated. And when someone asks what happened, the team doesn't have to reconstruct the answer from memory.</p>
+<p>I've been thinking about that same principle while developing control documentation, testing procedures, and evidence workflows for my self-directed GRC projects.</p>
+<p>An audit might happen at a particular point in time, but the controls being evaluated operate—or should operate—long before an auditor arrives.</p>
+<p>If evidence only becomes a priority when an audit is announced, an organization may discover that important decisions weren't documented, exceptions weren't tracked, or remediation activities never received formal closure.</p>
+<p>At that point, collecting evidence becomes an exercise in recovering the past.</p>
+<p><strong>Audit readiness isn't about preparing a convincing story for an auditor. It's about operating controls consistently enough that the evidence already tells the story.</strong></p>
+
+<h2>Design Evidence Into the Workflow</h2>
+<p>One of the most useful questions to ask when designing a process is: <em>How will we know this actually happened?</em></p>
+<p>It's a simple question, but it changes how a process is designed.</p>
+<p>Consider an access review. The requirement might be to periodically evaluate whether users still need their assigned permissions. A procedure can explain who performs the review and how often it occurs.</p>
+<p>But if the workflow doesn't preserve the reviewer's decision, identify exceptions, and connect requested changes to their completion, demonstrating the control's operation becomes difficult.</p>
+<p>The same issue can appear in change management, risk assessments, policy exceptions, and other governance activities.</p>
+<p>While building sample control and evidence workflows, I focused on connecting three things: the activity required by the control, the person responsible for performing it, and the record that demonstrates the outcome.</p>
+<p>That doesn't mean saving every email or screenshot.</p>
+<p>Evidence should be relevant to the control objective, sufficiently reliable, and retained in a way that allows someone else to understand what occurred. It also needs appropriate protection, because audit evidence may contain sensitive business or access information.</p>
+<p>A well-designed workflow produces useful records as a natural result of doing the work.</p>
+<p><strong>The strongest evidence process isn't the one that collects the most files. It's the one that consistently captures what matters while the work is happening.</strong></p>
+
+<h2>Test the Control Before Someone Else Does</h2>
+<p>A documented control and an operating control are not necessarily the same thing.</p>
+<p>A policy might require timely access removal when an employee changes roles. A procedure might identify the manager and system administrator responsible for the handoff.</p>
+<p>Those documents establish expectations. They don't, by themselves, demonstrate that the expectations are being met.</p>
+<p>That's where control testing becomes valuable.</p>
+<p>In my self-directed GRC work, I've approached testing as a way to connect a control's stated purpose with observable evidence of its operation.</p>
+<p>For example, a test of role-change access removal might examine a defined sample of personnel changes, identify the access modifications required, compare completion dates against the organization's criteria, and inspect supporting records.</p>
+<p>The test should be specific enough that another reviewer could understand what was examined, which criteria were applied, and how the conclusion was reached.</p>
+<p>It's also important to distinguish between a control that's poorly designed and one that's well designed but inconsistently executed.</p>
+<p>Those problems call for different responses.</p>
+<p>A missing approval step may indicate a design weakness. A required approval that exists in the procedure but is repeatedly skipped may indicate an operating effectiveness problem.</p>
+<p>Both matter, but understanding the difference makes remediation more useful.</p>
+<p><strong>Testing isn't just about finding failures. It's about understanding whether a control is designed to achieve its objective and whether it operates as intended.</strong></p>
