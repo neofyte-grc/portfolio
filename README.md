@@ -36,7 +36,7 @@ The responsive portfolio is deployed through GitHub Pages from the repository ro
 
 - [Homepage](https://neofyte-grc.github.io/portfolio/)
 - [All Field Notes](https://neofyte-grc.github.io/portfolio/insights/)
-- [Résumé](https://neofyte-grc.github.io/portfolio/Assets/Tommy-Marshall-GRC-Resume.pdf)
+- [Résumé](https://neofyte-grc.github.io/portfolio/Assets/Tommy_Marshall_GRC_Master_Resume.pdf)
 - [GitHub profile](https://github.com/neofyte-grc)
 - [LinkedIn](https://www.linkedin.com/in/tommy-marshall-grc/)
 
