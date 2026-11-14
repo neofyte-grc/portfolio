@@ -349,3 +349,7 @@ footer{padding:46px clamp(24px,5vw,96px)}
 @media (max-width:1099px) and (prefers-reduced-motion:reduce){
  .hero-copy .hero-impact::after{animation:none!important;transform:scaleX(1)!important;opacity:1!important}
 }
+
+/* Approved hero headline alignment: centered text and accent line only. */
+.hero-impact{text-align:center!important}
+.hero-impact::after{margin-left:auto!important;margin-right:auto!important}
